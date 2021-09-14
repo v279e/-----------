@@ -1,0 +1,54 @@
+body {
+    margin: 0px;
+    background-color:blanchedalmond;
+}
+header {
+    background-color: rgb(26, 18, 18);
+    color:blanchedalmond;
+}
+header a{
+    color:blanchedalmond;
+    text-decoration: none;
+}
+.container {
+    text-decoration: none;
+    max-width: 75%;
+    margin: 0 auto;
+}
+.main-menu{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.btn{
+    text-decoration: none;
+    color:rgb(99, 71, 71);
+    font-weight: bold;
+    border: 2px solid rgb(99, 71, 71);
+    padding: 10px;
+    border-radius: 5px;
+}
+.btn:hover{
+    transition: color 0.5s, border-color 0.5s;
+    color:rgb(101, 108, 129);
+    border-color: rgb(119, 39, 30);
+}
+p{
+    text-align:justify;
+}
+footer{
+    background-color: rgb(26, 18, 18);
+    color:blanchedalmond;
+    padding: 40px 0;
+    margin-top: 2rem;
+}
+.chel {
+	max-width: 30%;
+	max-height: 30%;
+	margin-left: 20%;
+	float: top;
+	
+}
+.teh {
+	max-width: 20%;
+}
