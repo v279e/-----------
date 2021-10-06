@@ -1,0 +1,176 @@
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    min-width: 300px;
+}
+
+.header {
+    background-color: antiquewhite;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: 5px solid orange;
+    /* position:sticky; */
+    /* зафиксированная позиция (есть еще абсолют это позиция от родителя есть еще релайтив это позиция относительно родителя */
+    top: 0;
+}
+
+.flex-wrapper {
+    display: flex;
+}
+
+.sidebar section {
+    width: 250px;
+}
+
+/* чтобы числа у произодителей не слетали */
+
+.profile {
+    /* float: right; */
+}
+
+.sidebar {
+    display: flex;
+    justify-content: space-between;
+    /* float:left; */
+    padding: 20px;
+    width: 220px;
+    box-sizing: border-box;
+    /* margin-right:30px; */
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+main {
+    padding-top: 10px;
+}
+
+.goods-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: 250px; */
+    padding-top: 20px;
+    justify-content: space-between;
+    /* расстояние между картинками */
+}
+
+.goods {
+    border: 1px solid black;
+    padding: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    min-height: 200px;
+    min-width: 250px;
+}
+
+.goods-img img {
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.price-and-buy {
+    height: 50px;
+}
+
+.price {
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    background: orange;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.buy {
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    background: blue;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media all and (max-width:600px) {
+    /* at правило (@) */
+    .main-menu {
+        align-items: center;
+        flex-direction: column;
+    }
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-wrapper {
+        flex-direction: column;
+    }
+}
+
+/* .clearfix::after{
+    content:"";
+    clear:both;
+    display:block;
+    }*/
+
+/* }элемент которого нет на странице чтобы вход не выпадал из родительского документа*/
+
+.main-menu a {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 15px;
+    color: black;
+}
+
+.navigation {
+    /* float: left; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.pagination {
+    /* margin-left: 250px; */
+    padding-top: 20px;
+    /* display:flex; */
+    text-align: right;
+}
+
+.pagination .btn {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.pagination .btn.active {
+    background-color: wheat;
+    color: black;
+}
