@@ -1,0 +1,31 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+.banner{
+    background-color: #eaecf0;
+}
+
+.call-to-action {
+    background-color: #011627;
+    color: white;
+}
+
+.technologies .image-fluid{
+    height: 300px;
+}
+
+.dark{
+    background-color: #011627;
+    color: #83f3e9;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    }
+
+.footer{
+    background-color: #011627;
+    color: white;
+}
+.header{
+    background-color: aliceblue ;
+
+}
